@@ -38,14 +38,14 @@ export default function SolutionGrid() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="showcase" className="py-24 md:py-40 px-6 md:px-12 border-b structural-border bg-[#0a0a0a]">
+    <section id="showcase" className="py-24 md:py-40 px-6 md:px-12 border-b structural-border bg-[#f4f4f5]">
       <div className="max-w-7xl mx-auto space-y-16">
         
         <div className="max-w-3xl">
-          <h2 className="text-4xl md:text-6xl font-display font-medium text-white tracking-tight mb-6">
+          <h2 className="text-4xl md:text-6xl font-display font-medium text-black tracking-tight mb-6">
             Arquitetura de Controlo
           </h2>
-          <p className="text-xl text-white/50 font-light leading-relaxed">
+          <p className="text-xl text-black/50 font-light leading-relaxed">
             Uma grid estrutural desenhada para velocidade. Cada módulo do TourOS foi otimizado para operações de alta cadência, focado na clareza densa de dados.
           </p>
         </div>
@@ -57,15 +57,15 @@ export default function SolutionGrid() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className={`${item.span} relative bg-[#141414] border structural-border rounded-2xl p-8 overflow-hidden group flex flex-col justify-between`}
+              className={`${item.span} relative bg-white border structural-border rounded-2xl p-8 overflow-hidden group flex flex-col justify-between`}
             >
               <div className="relative z-10">
-                <item.icon className="w-8 h-8 text-white/30 mb-6 group-hover:text-white transition-colors duration-300" />
-                <h3 className="text-2xl font-display text-white mb-2">{item.title}</h3>
-                <p className="text-white/50 font-light pr-8">{item.description}</p>
+                <item.icon className="w-8 h-8 text-black/30 mb-6 group-hover:text-black transition-colors duration-300" />
+                <h3 className="text-2xl font-display text-black mb-2">{item.title}</h3>
+                <p className="text-black/60 font-light pr-8">{item.description}</p>
               </div>
               
-              <div className="absolute right-0 bottom-0 top-32 left-12 md:left-24 bg-[#1a1a1a] border-t border-l structural-border rounded-tl-2xl shadow-2xl flex items-center justify-center text-sm font-mono text-white/30 truncate px-4 transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2">
+              <div className="absolute right-0 bottom-0 top-32 left-12 md:left-24 bg-[#fafafa] border-t border-l structural-border rounded-tl-2xl shadow-xl flex items-center justify-center text-sm font-mono text-black/40 truncate px-4 transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2">
                 {item.media}
               </div>
             </motion.div>

@@ -14,12 +14,12 @@
 
 @layer base {
   body {
-    @apply bg-[#050505] text-[#e5e5e5] font-sans antialiased selection:bg-accent selection:text-white;
+    @apply bg-[#fcfcfc] text-[#111111] font-sans antialiased selection:bg-accent selection:text-white;
   }
 }
 
 @layer utilities {
   .structural-border {
-    @apply border-white/10;
+    @apply border-black/10;
   }
 }

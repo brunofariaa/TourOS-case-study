@@ -10,7 +10,7 @@ export default function Challenge() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-start">
         
         <div className="md:col-span-4">
-          <h2 className="text-sm font-mono tracking-widest text-white/50 uppercase sticky top-32">
+          <h2 className="text-sm font-mono tracking-widest text-black/50 uppercase sticky top-32">
             Contexto & Desafio
           </h2>
         </div>
@@ -21,21 +21,21 @@ export default function Challenge() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h3 className="text-3xl md:text-5xl font-serif text-white leading-tight mb-8">
+            <h3 className="text-3xl md:text-5xl font-serif text-black leading-tight mb-8">
               "A fragmentação de sistemas era o maior entrave ao crescimento. Precisávamos de uma fonte única de verdade para gerir desde a disponibilidade de frota até à faturação complexa."
             </h3>
             
-            <div className="flex gap-12 font-mono text-sm text-white/40">
+            <div className="flex gap-12 font-mono text-sm text-black/40">
               <div>
-                <span className="block text-white mb-2">Problema</span>
+                <span className="block text-black mb-2">Problema</span>
                 Operações em silos.
               </div>
               <div>
-                <span className="block text-white mb-2">Indústria</span>
+                <span className="block text-black mb-2">Indústria</span>
                 Turismo & Lazer
               </div>
               <div>
-                <span className="block text-white mb-2">Escala</span>
+                <span className="block text-black mb-2">Escala</span>
                 +500 Operadores
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function Challenge() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="prose prose-invert prose-lg max-w-none text-white/60 font-light"
+            className="prose prose-lg max-w-none text-black/60 font-light"
           >
             <p>
               Operadores turísticos dependem de ecossistemas complexos: gestão de disponibilidade em tempo real, alocação de recursos físicos (guias, viaturas, barcos), complexidades de pricing dinâmico e canais de distribuição (OTAs). 
